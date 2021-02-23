@@ -52,6 +52,14 @@
                 </a>
             </div>
         </div>
+        <div class="col-md-2 mt-3 box-button-5 align-items-center ">
+            <div class="d-flex justify-content-center flex-column tahun-ajaran">
+                <i class="fas fa-book-open fa-7x"></i>
+                <a class="tulisan-link" href="<?= base_url('mapel'); ?>">
+                    <h1>Tahun Ajaran</h1>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 <?= $this->endSection(); ?>
