@@ -2,7 +2,7 @@
 <?= $this->section('content'); ?>
 <div class="container box">
     <div class="row mt-5 text-white">
-        <div class="col-md-2 box-button align-items-center ">
+        <div class="col-md-2 mt-3 box-button align-items-center ">
             <div class="d-flex justify-content-center flex-column siswa">
                 <i class="fas fa-user fa-7x"></i>
                 <a class="tulisan-link" href="<?= base_url('siswa'); ?>">
@@ -10,7 +10,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-2 box-button-2 align-items-center">
+        <div class="col-md-2 mt-3 box-button-2 align-items-center">
             <div class="d-flex flex-column guru">
                 <i class="fas fa-user-graduate fa-7x"></i>
                 <a class="tulisan-link" href="<?= base_url('guru'); ?>">
@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="col-md-2 box-button-3 align-items-center ">
+        <div class="col-md-2 mt-3 box-button-3 align-items-center ">
             <div class="d-flex justify-content-center flex-column nilai">
                 <i class="fas fa-clipboard-list fa-8x"></i>
                 <a class="tulisan-link" href="#">
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="col-md-2 box-button-4 align-items-center">
+        <div class="col-md-2 mt-3 box-button-4 align-items-center">
             <div class="d-flex justify-content-center flex-column kelas">
                 <i class="fas fa-building fa-7x"></i>
                 <a class="tulisan-link" href="<?= base_url('kelas'); ?>">
@@ -36,7 +36,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-2 box-button-5 align-items-center ">
+        <div class="col-md-2 mt-3 box-button-5 align-items-center ">
             <div class="d-flex justify-content-center flex-column mapel">
                 <i class="fas fa-book-open fa-7x"></i>
                 <a class="tulisan-link" href="<?= base_url('mapel'); ?>">
@@ -53,13 +53,22 @@
             </div>
         </div>
         <div class="col-md-2 mt-3 box-button-5 align-items-center ">
-            <div class="d-flex justify-content-center flex-column tahun-ajaran">
+            <div class="d-flex justify-content-center flex-column wali-kelas">
                 <i class="fas fa-book-open fa-7x"></i>
                 <a class="tulisan-link" href="<?= base_url('mapel'); ?>">
-                    <h1>Tahun Ajaran</h1>
+                    <h1>Wali Kelas</h1>
                 </a>
             </div>
         </div>
+        <div class="col-md-2 mt-3 box-button-5 align-items-center ">
+            <div class="d-flex justify-content-center flex-column wali-kelas">
+                <i class="fas fa-book-open fa-7x"></i>
+                <a class="tulisan-link" href="<?= base_url('mapel'); ?>">
+                    <h1>Wali Kelas</h1>
+                </a>
+            </div>
+        </div>
+
     </div>
 </div>
 <?= $this->endSection(); ?>
