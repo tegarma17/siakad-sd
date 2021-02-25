@@ -3,7 +3,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-1 p-3">
-            <a href="<?= base_url('TambahMapel'); ?>" class="button p-2">Tambah</a>
+            <a href="<?= base_url('kelas/tambahkelas'); ?>" class="button p-2">Tambah</a>
         </div>
         <div class="col-md-1 p-3">
             <a href="<?= base_url('dashboard') ?>" class="button p-2" style="background-color: #F9B401;">Kembali</a>

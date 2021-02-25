@@ -24,4 +24,9 @@ class Modelkelas extends Model
                 ->getRowArray();
         }
     }
+    public function saveKelas($data)
+    {
+        $builder = $this->db->table($this->table);
+        return $builder->insert($data);
+    }
 }
