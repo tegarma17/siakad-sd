@@ -1,7 +1,7 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 <div class="container box">
-    <div class="row mt-5 text-white">
+    <div class="row mt-5 text-white d-flex justify-content-center">
         <div class="col-md-2 mt-3 box-button align-items-center ">
             <div class="d-flex justify-content-center flex-column siswa">
                 <i class="fas fa-user fa-7x"></i>
@@ -36,6 +36,10 @@
                 </a>
             </div>
         </div>
+    </div>
+</div>
+<div class="container box1">
+    <div class="row text-white d-flex justify-content-center">
         <div class="col-md-2 mt-3 box-button-5 align-items-center ">
             <div class="d-flex justify-content-center flex-column mapel">
                 <i class="fas fa-book-open fa-7x"></i>
@@ -46,7 +50,7 @@
         </div>
         <div class="col-md-2 mt-3 box-button-5 align-items-center ">
             <div class="d-flex justify-content-center flex-column tahun-ajaran">
-                <i class="fas fa-book-open fa-7x"></i>
+                <i class="fas fa-calendar-day fa-7x"></i>
                 <a class="tulisan-link" href="<?= base_url('mapel'); ?>">
                     <h1>Tahun Ajaran</h1>
                 </a>
@@ -54,21 +58,23 @@
         </div>
         <div class="col-md-2 mt-3 box-button-5 align-items-center ">
             <div class="d-flex justify-content-center flex-column wali-kelas">
-                <i class="fas fa-book-open fa-7x"></i>
+                <i class="fas fa-user-tie fa-7x"></i>
                 <a class="tulisan-link" href="<?= base_url('mapel'); ?>">
                     <h1>Wali Kelas</h1>
                 </a>
             </div>
         </div>
         <div class="col-md-2 mt-3 box-button-5 align-items-center ">
-            <div class="d-flex justify-content-center flex-column wali-kelas">
-                <i class="fas fa-book-open fa-7x"></i>
+            <div class="d-flex justify-content-center flex-column ekstra">
+                <i class="fas fa-running fa-7x"></i>
                 <a class="tulisan-link" href="<?= base_url('mapel'); ?>">
-                    <h1>Wali Kelas</h1>
+                    <h1>Ekstrakulikuler</h1>
                 </a>
             </div>
         </div>
-
     </div>
+</div>
+
+</div>
 </div>
 <?= $this->endSection(); ?>

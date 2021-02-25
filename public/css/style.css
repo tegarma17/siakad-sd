@@ -98,7 +98,7 @@
     margin-left: 30px;
 }
 .mapel{
-    margin-top: 30px;
+    margin-top: 25px;
     width: 130px;
     margin-left: 20px; 
 }
@@ -107,23 +107,38 @@
 }
 .tahun-ajaran{
     margin-top: 25px;
-    margin-left: 20px;
+    margin-left: 35px;
 }
 .tahun-ajaran >.tulisan-link>h1{
-   
+    margin-left: -13px;
     font-size: 25px;
 }
 .wali-kelas{
     margin-top: 25px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .wali-kelas h1{
-    margin-left: 10px;
+    margin-left: -5px;
+}
+.ekstra{
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.ekstra >.tulisan-link>h1{
+    font-size: 25px;
+    margin-left: -151px;
 }
 .box{
-    
+   margin-left: 10%; 
 }
 .box a{
+    text-decoration: none;
+    color: white;
+    margin-top:25px;
+    margin-left: -20px;
+    letter-spacing: 1px;
+}
+.box1 a{
     text-decoration: none;
     color: white;
     margin-top:25px;
