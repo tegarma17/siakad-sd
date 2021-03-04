@@ -18,9 +18,21 @@ class Modelsiswa extends Model
     }
     public function saveSiswa($data)
     {
-        $builder = $this->db-table($this->table);
+        $builder = $this->db->table($this->table);
         return $builder->insert($data);
     }
 
-    
+    public function editSiswa($data,$id)
+    {
+        $builder = $this->db->table($this->table);
+        $builder->where('nisn', $id);
+        return $builder->update($data);
+    }
+
+    public function hapusSiswa($id)
+    {
+        $builder = $this->db->table($this->table);
+        return $builder->delete(['nisn' => $id]);
+        
+    }
 }

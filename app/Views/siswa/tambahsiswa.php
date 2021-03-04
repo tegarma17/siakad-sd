@@ -8,7 +8,7 @@
             <h4 class="card-title">Siswa baru</h4>
         </div>
         <div class="card-body">
-            <form action="/siswa/addkelas" method="post">
+            <form action="/siswa/addSiswa" method="post">
                 <?= csrf_field(); ?>
                 <div class="form-group">
                     <label for="nisn">NISN</label>

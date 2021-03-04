@@ -23,7 +23,7 @@
                 </div>
                 <div class="form-group">
                     <label for="">Tanggal Lahir</label>
-                    <input type="number" value="<?= $siswa->siswa_tanggal_lahir;?>" name="siswa_tanggal_lahir" id="siswa_tanggal_lahir" required class="form-control">
+                    <input type="date" value="<?= $siswa->siswa_tanggal_lahir;?>" name="siswa_tanggal_lahir" id="siswa_tanggal_lahir" required class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">Jenis Kelamin</label>
@@ -37,7 +37,7 @@
                     <label for="">Alamat</label>
                     <input type="text" value="<?= $siswa->siswa_alamat;?>" name="siswa_alamat" id="siswa_alamat" required class="form-control">
                 </div>
-                <input type="hidden" value="<?= $siswa->$nisn;?>" name="nisn">
+                <input type="hidden" value="<?= $siswa->nisn;?>" name="nisn">
                 <button class="btn btn-success">Edit Data</button>
             </form>
             
