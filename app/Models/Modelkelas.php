@@ -7,26 +7,32 @@ use CodeIgniter\Model;
 class Modelkelas extends Model
 {
     protected $table = 'tb_kelas';
-    function __construct()
-    {
-        $this->db = db_connect();
-    }
     public function tampildata($id = false)
     {
         if ($id === false) {
-            return $this->table('tb_kelas')
-                ->get()
-                ->getResultArray();
+            return $this->findAll();
+                
         } else {
-            return $this->table('tb_kelas')
-                ->where('kelas_id', $id)
-                ->get()
-                ->getRowArray();
+            return $this->getWhere(['kelas_id'=>$id]);
         }
     }
     public function saveKelas($data)
     {
         $builder = $this->db->table($this->table);
         return $builder->insert($data);
+    }
+
+    public function editKelas($data,$id)
+    {
+        $builder = $this->db->table($this->table);
+        $builder->where('kelas_id', $id);
+        return $builder->update($data);
+    }
+
+    public function hapusKelas($id)
+    {
+        $builder = $this->db->table($this->table);
+        return $builder->delete(['kelas_id' => $id]);
+        
     }
 }

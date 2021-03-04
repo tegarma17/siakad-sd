@@ -21,18 +21,28 @@
                             <th scope="col">Nama Kelas</th>
                             <th scope="col">Tahun Ajaran</th>
                             <th scope="col">Semester</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         foreach ($tampildata as $row => $data) { ?>
                             <tr>
-                                <td><?php echo $data['kelas_id']; ?></td>
-                                <td><?php echo $data['kelas_nama']; ?></td>
-                                <td><?php echo $data['kelas_tahun_ajaran']; ?></td>
-                                <td><?php echo $data['kelas_semester']; ?></td>
+                                <td><?= $data['kelas_id']; ?></td>
+                                <td><?= $data['kelas_nama']; ?></td>
+                                <td><?= $data['kelas_tahun_ajaran']; ?></td>
+                                <td><?= $data['kelas_semester']; ?></td>
+                            <td>
+                            <a href="<?= base_url('kelas/edit/'.$data['kelas_id']);?>" 
+                            class="btn btn-success">
+                            Edit</a>
+                            <a href="<?= base_url('kelas/hapus/'.$data['kelas_id']);?>" 
+                                    onclick="javascript:return confirm('Apakah ingin menghapus data barang ?')"
+                                    class="btn btn-danger">
+                                    Hapus</a></td>
                             </tr>
-                        <?php } ?>
+                        <?php } 
+                        ?>
 
 
 

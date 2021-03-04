@@ -21,7 +21,7 @@
     <!-- <font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Livvic&display=swap" rel="stylesheet">
-    <title><?= $tittle; ?> </title>
+    <title> </title>
 </head>
 
 <body>
