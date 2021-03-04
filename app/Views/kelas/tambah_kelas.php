@@ -8,22 +8,23 @@
             <h4 class="card-title">Kelas baru</h4>
         </div>
         <div class="card-body">
-            <form method="post" action="<?= base_url('kelas/addkelas'); ?>">
+            <form action="/kelas/addkelas" method="post">
+                <?= csrf_field(); ?>
                 <div class="form-group">
-                    <label for="">ID KELAS</label>
-                    <input type="text" name="kelas_id" class="form-control" required>
+                    <label for="kelas_id">ID KELAS</label>
+                    <input type="text" name="kelas_id" class="form-control" id="kelas_id" required>
                 </div>
                 <div class="form-group">
-                    <label for="">Qty</label>
-                    <input type="number" name="kelas_nama" class="form-control" required>
+                    <label for="kelas_nama">Nama Kelas</label>
+                    <input type="text" name="kelas_nama" class="form-control" id="kelas_nama" required>
                 </div>
                 <div class="form-group">
-                    <label for="">Harga Beli</label>
-                    <input type="number" name="beli" class="form-control" required>
+                    <label for="kelas_tahun_ajaran">Tahun Ajaran</label>
+                    <input type="number" name="kelas_tahun_ajaran" id="kelas_tahun_ajaran" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="">Harga Jual</label>
-                    <input type="number" name="jual" class="form-control" required>
+                    <label for="kelas_semster">Semester</label>
+                    <input type="number" name="kelas_semester" id="kelas_semester" class="form-control" required>
                 </div>
                 <button class="btn btn-success">Tambah Data</button>
             </form>

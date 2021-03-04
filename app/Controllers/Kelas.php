@@ -7,8 +7,12 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\Modelkelas;
 
+//  @var HTTP\IncomingRequest
+
 class Kelas extends Controller
 {
+
+    protected $request;
     public function index()
     {
 
@@ -30,17 +34,15 @@ class Kelas extends Controller
     }
     public function addkelas()
     {
-        $model = new Modelkelas;
-        $data = [
-            'kelas_id' => $this->request->getPost('kelas_id'),
-            'nama_kelas' => $this->request->getpost('kelas_nama')
-
-        ];
+        $model = new Modelkelas();
+        $data = array(
+            'kelas_id' => $this->request->getVar('kelas_id'),
+            'kelas_nama' => $this->request->getVar('kelas_nama'),
+            'kelas_tahun_ajaran' => $this->request->getVar('kelas_tahun_ajaran'),
+            'kelas_semester' => $this->request->getVar('kelas_semester'),
+        );
         $model->saveKelas($data);
-        echo '<script
-                alert("Suskes Tambah Kelas");
-                window.location="' . base_url('kelas') . '"
-            </script>';
+        return redirect()->to('/kelas');
     }
 
     public function dashboard()
