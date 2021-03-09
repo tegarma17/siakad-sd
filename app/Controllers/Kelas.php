@@ -32,6 +32,8 @@ class Kelas extends Controller
         ];
         return view('kelas/tambah_kelas', $data);
     }
+
+    
     public function addkelas()
     {
         $kls = new Modelkelas();
@@ -49,10 +51,15 @@ class Kelas extends Controller
     {
         $kls = new Modelkelas();
         $tampildata = $kls->tampildata($id)->getRow();
+        $data = [
+            'tittle' => 'Edit Data Kelas',
+
+        ];
         if(isset($tampildata))
         {
             $data['kelas'] = $tampildata;
             $data['title']  = 'Edit '.$tampildata->kelas_nama;
+            
              
             return view('kelas/edit_kelas', $data);
         }else{

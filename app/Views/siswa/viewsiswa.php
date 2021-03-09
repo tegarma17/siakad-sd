@@ -26,6 +26,7 @@
                             <th scope="col">Jenis Kelamin</th>
                             <th scope="col">Agama</th>
                             <th scope="col">Alamat</th>
+                            <th> Function </th>
                         </tr>
                     </thead>
                     <tbody>

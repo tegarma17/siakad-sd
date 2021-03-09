@@ -74,7 +74,6 @@ class Siswa extends BaseController
         $siswa = new Modelsiswa();
         $id = $this->request->getPost('nisn');
         $data = array(
-            'siswa_id_kelas' => $this->request->getPost('siswa_id_kelas'),
             'siswa_nama' => $this->request->getPost('siswa_nama'),
             'siswa_tahun_angkatan' => $this->request->getPost('siswa_tahun_angkatan'),
             'siswa_tempat_lahir' => $this->request->getPost('siswa_tempat_lahir'),
