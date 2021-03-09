@@ -29,7 +29,23 @@
                         </tr>
                     </thead>
                     <tbody>
-                       
+                    <?php
+                        foreach ($tampildata as $row => $data) { ?>
+                            <tr>
+                                <td><?= $data['nip']; ?></td>
+                                <td><?= $data['guru_id_kelas']; ?></td>
+                                <td><?= $data['guru_nama']; ?></td>
+                                <td><?= $data['guru_tempat_lahir']; ?></td>
+                                <td><?= $data['guru_tanggal_lahir']; ?></td>
+                                <td><?= $data['guru_jenis_kelamin']; ?></td>
+                                <td><?= $data['guru_status']; ?></td>
+                                <td><?= $data['guru_agama']; ?></td>
+                                <td><?= $data['guru_alamat']; ?></td>
+                            
+                            </tr> 
+                        <?php } 
+                        ?>
+
                     </tbody>
                 </table>
             </div>
