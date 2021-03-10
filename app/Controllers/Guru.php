@@ -70,6 +70,23 @@ class Guru extends BaseController
 
         }
     }
+    public function update()
+    {
+        $guru = new Modelguru();
+        $id = $this->request->getPost('nip');
+        $data = array(
+            'guru_nama' => $this->request->getPost('guru_nama'),
+            'guru_tempat_lahir' => $this->request->getPost('guru_tempat_lahir'),
+            'guru_tanggal_lahir' => $this->request->getPost('guru_tanggal_lahir'),
+            'guru_jenis_kelamin' => $this->request->getPost('guru_jenis_kelamin'),
+            'guru_status' => $this->request->getPost('guru_status'),
+            'guru_agama' => $this->request->getPost('guru_agama'),
+            'guru_alamat' => $this->request->getPost('guru_alamat'),
+        
+        );
+        $guru->editGuru($data, $id);
+        return redirect()->to('/guru');
+    }
 
     public function hapus($id)
     {

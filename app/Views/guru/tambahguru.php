@@ -23,10 +23,6 @@
                     <input type="text" name="guru_nama" id="guru_nama" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="guru_tahun_angkatan">Tahun Angkatan</label>
-                    <input type="number" name="guru_tahun_angkatan" id="guru_tahun_angkatan" class="form-control" required>
-                </div>
-                <div class="form-group">
                     <label for="guru_tempat_lahir">Tempat Lahir</label>
                     <input type="text" name="guru_tempat_lahir" id="guru_tempat_lahir" class="form-control" required>
                 </div>

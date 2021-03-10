@@ -3,7 +3,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-1 p-3">
-            <a href="<?= base_url('TambahMapel'); ?>" class="button p-2">Tambah</a>
+            <a href="<?= base_url('mapel/tambahmapel'); ?>" class="button p-2">Tambah</a>
         </div>
         <div class="col-md-1 p-3">
             <a href="<?= base_url('dashboard') ?>" class="button p-2" style="background-color: #F9B401;">Kembali</a>
@@ -17,31 +17,14 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">ID Kelas</th>
-                            <th scope="col">Nama Kelas</th>
-                            <th scope="col">Tahun Ajaran</th>
-                            <th scope="col">Semester</th>
+                            <th scope="col">ID Mata Pelajaran</th>
+                            <th scope="col">NISN</th>
+                            <th scope="col">Nama Mata Pelajaran</th>
+                            <th scope="col">KKM</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>

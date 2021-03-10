@@ -47,7 +47,7 @@
                                     class="btn btn-success">
                                     Edit</a>
                                     <a href="<?= base_url('guru/hapus/'.$data['nip']);?>" 
-                                    onclick="javascript:return confirm('Apakah ingin menghapus data barang ?')"
+                                    onclick="javascript:return confirm('Apakah ingin menghapus Data Guru ?')"
                                     class="btn btn-danger">
                                     Hapus</a></td>
                             
