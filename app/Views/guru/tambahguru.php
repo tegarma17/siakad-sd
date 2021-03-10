@@ -2,7 +2,7 @@
 <?= $this->section('content'); ?>
 
 <div class="container p-5">
-    <a href="<?= base_url('dashboard'); ?>" class="btn btn-secondary mb-2">Kembali</a>
+    <a href="<?= base_url('/guru'); ?>" class="btn btn-secondary mb-2">Kembali</a>
     <div class="card">
         <div class="card-header bg-info text-white">
             <h4 class="card-title">Guru Baru</h4>
@@ -11,40 +11,45 @@
             <form action="/guru/addguru" method="post">
                 <?= csrf_field(); ?>
                 <div class="form-group">
-                    <label for="nisn">NISN</label>
-                    <input type="text" name="nisn" class="form-control" id="nisn" required>
+                    <label for="nip">NIP</label>
+                    <input type="text" name="nip" class="form-control" id="nip" required>
                 </div>
                 <div class="form-group">
-                    <label for="siswa_id_kelas">Kelas</label>
-                    <input type="text" name="siswa_id_kelas" class="form-control" id="siswa_id_kelas" required>
+                    <label for="guru_id_kelas">Kelas</label>
+                    <input type="text" name="guru_id_kelas" class="form-control" id="guru_id_kelas" required>
                 </div>
                 <div class="form-group">
-                    <label for="siswa_nama">Nama Siswa</label>
-                    <input type="text" name="siswa_nama" id="siswa_nama" class="form-control" required>
+                    <label for="guru_nama">Nama guru</label>
+                    <input type="text" name="guru_nama" id="guru_nama" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="siswa_tahun_angkatan">Tahun Angkatan</label>
-                    <input type="number" name="siswa_tahun_angkatan" id="siswa_tahun_angkatan" class="form-control" required>
+                    <label for="guru_tahun_angkatan">Tahun Angkatan</label>
+                    <input type="number" name="guru_tahun_angkatan" id="guru_tahun_angkatan" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="siswa_tempat_lahir">Tempat Lahir</label>
-                    <input type="text" name="siswa_tempat_lahir" id="siswa_tempat_lahir" class="form-control" required>
+                    <label for="guru_tempat_lahir">Tempat Lahir</label>
+                    <input type="text" name="guru_tempat_lahir" id="guru_tempat_lahir" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="siswa_tanggal_lahir">Tanggal Lahir</label>
-                    <input type="date" name="siswa_tanggal_lahir" id="siswa_tanggal_lahir" class="form-control" required>
+                    <label for="guru_tanggal_lahir">Tanggal Lahir</label>
+                    <input type="date" name="guru_tanggal_lahir" id="guru_tanggal_lahir" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="siswa_jenis_kelamin">Jenis Kelamin</label>
-                    <input type="text" name="siswa_jenis_kelamin" id="siswa_jenis_kelamin" class="form-control" required>
+                    <label for="guru_jenis_kelamin">Jenis Kelamin</label>
+                    <input type="text" name="guru_jenis_kelamin" id="guru_jenis_kelamin" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="siswa_agama">Agama</label>
-                    <input type="text" name="siswa_agama" id="siswa_agama" class="form-control" required>
+                    <label for="guru_status">Status</label>
+                    <input type="text" name="guru_status" id="guru_status" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guru_agama">Agama</label>
+                    <input type="text" name="guru_agama" id="guru_agama" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="siswa_alamat">Alamat</label>
-                    <input type="varchar" name="siswa_alamat" id="siswa_alamat" class="form-control" required>
+                    <label for="guru_alamat">Alamat</label>
+                    <input type="varchar" name="guru_alamat" id="guru_alamat" class="form-control" required>
                 </div>
                 <button class="btn btn-success">Tambah Data</button>
             </form>

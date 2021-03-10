@@ -38,7 +38,7 @@ class Guru extends BaseController
         $guru = new Modelguru();
         $data = array(
             'nip' => $this->request->getPost('nip'),
-            'guru_id_kelas' => $this->request->getpost('guru_id_keals'),
+            'guru_id_kelas' => $this->request->getpost('guru_id_kelas'),
             'guru_nama' => $this->request->getPost('guru_nama'),
             'guru_tempat_lahir' => $this->request->getPost('guru_tempat_lahir'),
             'guru_tanggal_lahir' => $this->request->getPost('guru_tanggal_lahir'),
@@ -65,11 +65,29 @@ class Guru extends BaseController
 
         }else{
             echo '<script>
-            alert("ID kelas '.$id.' Tidak ditemukan");
+            alert("NIP '.$id.' Tidak ditemukan");
             window.location="'.base_url('guru');
 
         }
     }
-    public function hapus()
+
+    public function hapus($id)
+    {
+        $guru = new Modelguru();
+        $getGuru = $guru->tampildata($id)->getRow();
+        if(isset($getGuru)){
+            $guru->hapusGuru($id);
+            echo '<script>
+            alert("Hapus Data kelas Sukses");
+            window.location="'.base_url('guru').'"
+        </script>';
+        }else{
+            echo '<script>
+                    alert("Hapus Gagal !, NIP '.$id.' Tidak ditemukan");
+                    window.location="'.base_url('guru').'"
+                </script>';
+        }
+        return redirect()->route('/guru');
+    }
 
 }

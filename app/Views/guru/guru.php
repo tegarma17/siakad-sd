@@ -3,7 +3,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-1 p-3">
-            <a href="#" class="button p-2">Tambah</a>
+            <a href="<?= base_url('guru/tambahguru');?>" class="button p-2">Tambah</a>
         </div>
         <div class="col-md-1 p-3">
             <a href="<?= base_url('dashboard') ?>" class="button p-2" style="background-color: #F9B401;">Kembali</a>
@@ -26,6 +26,7 @@
                             <th scope="col">Status</th>
                             <th scope="col">Agama</th>
                             <th scope="col">Alamat</th>
+                            <th>Function</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,6 +42,14 @@
                                 <td><?= $data['guru_status']; ?></td>
                                 <td><?= $data['guru_agama']; ?></td>
                                 <td><?= $data['guru_alamat']; ?></td>
+                                <td>
+                                      <a href="<?= base_url('guru/edit/'.$data['nip']);?>" 
+                                    class="btn btn-success">
+                                    Edit</a>
+                                    <a href="<?= base_url('guru/hapus/'.$data['nip']);?>" 
+                                    onclick="javascript:return confirm('Apakah ingin menghapus data barang ?')"
+                                    class="btn btn-danger">
+                                    Hapus</a></td>
                             
                             </tr> 
                         <?php } 
