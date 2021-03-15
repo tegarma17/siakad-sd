@@ -51,7 +51,7 @@
         <div class="col-md-2 mt-3 box-button-3 align-items-center ">
             <div class="d-flex justify-content-center flex-column tahun-ajaran">
                 <i class="fas fa-calendar-day fa-7x"></i>
-                <a class="tulisan-link" href="<?= base_url('mapel'); ?>">
+                <a class="tulisan-link" href="<?= base_url('tahun_ajaran'); ?>">
                     <h1>Tahun Ajaran</h1>
                 </a>
             </div>
